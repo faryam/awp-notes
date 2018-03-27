@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Section</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="assets/css/customAdminSection.css" />
+    <link rel="stylesheet" href="assets/css/dataTables.css" />
+</head>
+
+<body class="onePage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div id="wrapper">
+        <header>
+            <nav class="navbar navbar-default navbar-fixed-top navbarHeight">
+                <div class="container">
+                    <div class="navbar-header">
+                        <div class="navbar-brand">
+                            <a id="menu-toggle" href="#" class="glyphicon glyphicon-align-justify btn-menu toggle">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>
+                        <a class="navbar-brand" href="#">
+                            <img class="logoHeader" src="assets/img/logo.png">
+                        </a>
+                    </div>
+                    <div>
+                        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-envelope" style="font-size:25px;color: #3c8dbc;"></span>
+                                        <span class="badge" style="font-size:12px;margin-top:-45px;background-color: #00a65a !important;">7</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-bell" style="font-size:25px"></span>
+                                        <span class="badge" style="font-size:12px;margin-top:-45px;background-color: #f39c12 !important;">5</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown user user-menu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="margin-top: -8px;margin-left: 15px;">
+                                        <img src="assets/img/user.png" class="user-image" alt="User Image">
+                                        <span class="hidden-xs">Alexander Pierce</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">
+                                                <span class="glyphicon glyphicon-log-out" style="font-size:15px"></span> Logout</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper" class="navbar-default">
+            <nav id="spy" class="navbar-default">
+                <ul class="sidebar-nav nav" style="margin-top: 13px;">
+                    <li class="sidebar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default pull-right" type="submit">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="sidebar-brand">
+                        <a href="#home">
+                            <span class="fa fa-home solo">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#anch1">
+                            <span class="fa fa-anchor solo">Article Category</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#anch2">
+                            <span class="fa fa-anchor solo">Articles</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#anch3">
+                            <span class="fa fa-anchor solo">Writers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#anch4">
+                            <span class="fa fa-anchor solo">Contact Us</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Page content -->
+        <div id="page-content-wrapper">
+            <div class="page-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-10 col-lg-offset-1">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4>Article Item</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <h4 style="font-weight: bold;">Add Article</h4>
+                                        </div>
+										<div class="col-lg-12" id="message">
+										</div>
+                                        <form id="ArticleCreationForm" class="form-horizontal">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-4" for="Title">Title:</label>
+                                                    <div class="col-sm-8">
+														<input type="hidden" class="form-control" id="method" name="method" value="productRegistration"/>
+                                                        <input type="text" class="form-control" id="title" name="title" placeholder="Enter Name of Article Item">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-4" for="Article Image">Choose an Image:</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="file" id="featureImage" name="featureImage" style="margin-top: 5px;" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-4" for="Category">Category:</label>
+                                                    <div class="col-sm-8">
+                                                        <select class="form-control" name="categoryId" id="categoryId">
+                                                            <option value="0">Please Choose Article Category</option>
+                                                            <option value="1">All</option>
+                                                            <option value="2">Electronics</option>
+                                                            <option value="3">Technology</option>
+                                                            <option value="4">Health</option>
+                                                            <option value="5">Science</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-2" for="details">Detail:</label>
+                                                    <div class="col-sm-8">
+                                                        <textarea class="form-control" id="detail" name="detail" rows="5"></textarea>
+                                                    </div>
+                                                    <div class="col-sm-10 col-sm-offset-2" style="padding-top:10px;">
+                                                        <button type="submit" class="btn btn-default" value="submit">Submit</button>
+                                                        <button id="resetBtn" type="button" class="btn btn-default" value="cancel">Reset</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-10 col-lg-offset-1">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4>All Article Items</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Article</th>
+                                                        <th>Title</th>
+                                                        <th>Category</th>
+														<th>Detail</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+												
+												<tbody id="bodyProduct">
+												</tbody>
+												
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>Item</th>
+                                                        <th>Title</th>
+                                                        <th>Detail</th>
+                                                        <th>Category</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </tfoot>
+												
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+    <script src="assets/js/jquery3.2.1.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jqueryDatatable.js"></script>
+    <script src="assets/js/jqueryDatatableBootstrap.js"></script>
+    <script src="assets/js/question2Script.js"></script>
+</body>
+
+</html>

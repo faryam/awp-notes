@@ -1,0 +1,403 @@
+.borderBlackSolid{
+	border:1px solid #000;
+}
+.borderBlackDoted{
+	border:1px doted #000;
+}
+.borderRedSolid{
+	border:1px solid red;
+}
+.borderRedDoted{
+	border:1px doted red;
+}
+.divider{
+	background-color:red;padding:10px;
+}
+.navOpacity{
+	opacity:0.1;
+	color:#fff;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
+.headerBackground{
+	background-image:url("../img/1.jpg");
+	min-height:960px;
+}
+.navbar-inverse .navbar-brand{
+	color:#fff;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
+.onePage {
+  position: relative; 
+}
+.logoHeader{
+	width:320px;
+}
+.navbarHeight{
+	min-height:55px;
+}
+#myNavbar{
+	padding:8px;
+}
+.purpleBackground{
+	background-color: #673ab7;
+}
+.greyBackground{
+	background-color: #eee;
+}
+
+.gallery-title
+{
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #42B32F;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #42B32F;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+.gallery_product p{
+	display: block; /* Fallback for non-webkit */
+	display: -webkit-box;
+	max-width: 400px;
+	margin: 0 auto;
+	height: 55px;
+	line-height: 1.4;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+.bg-secondary{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0094d8+0,133f60+100 */
+background: rgb(0,148,216); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(0,148,216,1) 0%, rgba(19,63,96,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,148,216,1) 0%,rgba(19,63,96,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,148,216,1) 0%,rgba(19,63,96,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0094d8', endColorstr='#133f60',GradientType=0 ); /* IE6-9 */
+padding: 70px 0px;
+margin-top:50px; 
+}
+.cover-color{
+	color:#fff;
+}
+
+.display-1{
+	font-size: 65px;
+}
+.slideanim {visibility:visible;}
+.slide {
+	animation-name: slide;
+	-webkit-animation-name: slide;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	visibility: visible;
+}
+/* Add an orange color to all icons and set the font-size */
+.logo-small {
+    color: #f4511e;
+    font-size: 50px;
+}
+
+.logo {
+    color: #f4511e;
+    font-size: 200px;
+}
+@keyframes slide {
+  0% {
+	opacity: 0;
+	transform: translateY(70%);
+  } 
+  100% {
+	opacity: 1;
+	transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+	opacity: 0;
+	-webkit-transform: translateY(70%);
+  } 
+  100% {
+	opacity: 1;
+	-webkit-transform: translateY(0%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+	text-align: center;
+	margin: 25px 0;
+  }
+  .btn-lg {
+	  width: 100%;
+	  margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo {
+	  font-size: 150px;
+  }
+}.borderBlackSolid{
+	border:1px solid #000;
+}
+.borderBlackDoted{
+	border:1px doted #000;
+}
+.borderRedSolid{
+	border:1px solid red;
+}
+.borderRedDoted{
+	border:1px doted red;
+}
+.divider{
+	background-color:red;padding:10px;
+}
+.navOpacity{
+	opacity:0.1;
+	color:#fff;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
+.headerBackground{
+	background-image:url("../img/1.jpg");
+	min-height:960px;
+}
+.navbar-inverse .navbar-brand{
+	color:#fff;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
+.onePage {
+  position: relative; 
+}
+section {padding:70px 0px}
+#services {
+  background: url(../img/06.jpg);
+  background-position-x: right;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #fff;
+  padding-bottom: 20px;
+}
+#aboutUs{
+  background:url(../img/07.png);background-position-x:right;background-repeat:no-repeat;
+}
+
+.logoHeader{
+	width:320px;
+}
+.navbarHeight{
+	min-height:55px;
+}
+#myNavbar{
+	padding:8px;
+}
+.purpleBackground{
+	background-color: #673ab7;
+}
+.greyBackground{
+	background-color: #eee;
+}
+
+.gallery-title
+{
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #42B32F;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #42B32F;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+.gallery_product p{
+	display: block; /* Fallback for non-webkit */
+	display: -webkit-box;
+	max-width: 400px;
+	margin: 0 auto;
+	height: 55px;
+	line-height: 1.4;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+.bg-secondary{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0094d8+0,133f60+100 */
+background: rgb(0,148,216); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(0,148,216,1) 0%, rgba(19,63,96,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,148,216,1) 0%,rgba(19,63,96,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,148,216,1) 0%,rgba(19,63,96,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0094d8', endColorstr='#133f60',GradientType=0 ); /* IE6-9 */
+padding: 70px 0px;
+margin-top:50px; 
+}
+.cover-color{
+	color:#fff;
+}
+
+.display-1{
+	font-size: 65px;
+}
+.slideanim {visibility:visible;}
+.slide {
+	animation-name: slide;
+	-webkit-animation-name: slide;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	visibility: visible;
+}
+/* Add an orange color to all icons and set the font-size */
+.logo-small {
+    color: #f4511e;
+    font-size: 50px;
+}
+
+.logo {
+    color: #f4511e;
+    font-size: 200px;
+}
+@keyframes slide {
+  0% {
+	opacity: 0;
+	transform: translateY(70%);
+  } 
+  100% {
+	opacity: 1;
+	transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+	opacity: 0;
+	-webkit-transform: translateY(70%);
+  } 
+  100% {
+	opacity: 1;
+	-webkit-transform: translateY(0%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+	text-align: center;
+	margin: 25px 0;
+  }
+  .btn-lg {
+	  width: 100%;
+	  margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo {
+	  font-size: 150px;
+  }
+  .logoHeader {
+    width: 240px;
+}
+#services {background-color: #000;background:#000; }
+#aboutUs{background-size: 250%;}
+
+}
+.bg-dark{
+  background-color: #343a40 !important
+}
+.text-white{
+  color: #fff;
+}
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease-in-out;
+  max-width: 100%;
+  height: auto;
+}
